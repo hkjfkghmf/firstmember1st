@@ -19,21 +19,27 @@
 
     <div style="width:60px;height:4px;background:#e53935;margin:8px auto 25px;border-radius:2px;"></div>
 
-    <div style="text-align:left;margin-bottom:18px;">
-      <label>Username</label>
-      <input type="text"  style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font-size:14px;" />
-    </div>
+    <!-- ✅ FORM STARTS HERE -->
+    <form method="POST">
 
-    <div style="text-align:left;margin-bottom:18px;">
-      <label>Password</label>
-      <input type="password"  style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font-size:14px;" />
-    </div>
+      <div style="text-align:left;margin-bottom:18px;">
+        <label>Username</label>
+        <input type="text" name="username" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font-size:14px;" />
+      </div>
 
-    <div style="display:flex;align-items:center;gap:6px;margin:10px 0 20px;font-size:14px;">
-      <input type="checkbox" /> Remember me
-    </div>
+      <div style="text-align:left;margin-bottom:18px;">
+        <label>Password</label>
+        <input type="password" name="password" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font-size:14px;" />
+      </div>
 
-    <button style="width:100%;background:#e53935;color:white;padding:12px;border:none;border-radius:4px;cursor:pointer;font-size:15px;font-weight:bold;">SIGN IN →</button>
+      <div style="display:flex;align-items:center;gap:6px;margin:10px 0 20px;font-size:14px;">
+        <input type="checkbox" name="remember" /> Remember me
+      </div>
+
+      <button type="submit" style="width:100%;background:#e53935;color:white;padding:12px;border:none;border-radius:4px;cursor:pointer;font-size:15px;font-weight:bold;">SIGN IN →</button>
+
+    </form>
+    <!-- ✅ FORM ENDS HERE -->
 
     <div style="margin-top:20px;font-size:14px;">
       <p><a href="#" style="color:#1e88e5;text-decoration:none;">Need help signing in?</a></p>
@@ -46,7 +52,6 @@
     <div style="max-width:1100px;margin:0 auto;padding:0 20px;">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px;">
 
-        <!-- Left Link Section -->
         <div style="display:flex;gap:18px;flex-wrap:wrap;">
           <a href="#" style="color:white;text-decoration:none;">Internet Terms &amp; Usage</a>
           <span>|</span>
@@ -57,13 +62,11 @@
           <a href="#" style="color:white;text-decoration:none;">Accessibility Statement</a>
         </div>
 
-        <!-- Support Link -->
         <div>
           <a href="#" style="color:white;text-decoration:none;">Support</a>
         </div>
       </div>
 
-      <!-- Legal Text -->
       <div style="margin-top:25px;line-height:1.4;color:#e0e0e0;">
         <p>
           We do business in accordance with applicable housing and credit opportunity laws.
@@ -72,7 +75,6 @@
         <p>© 2025 Example Credit Union. All rights reserved.</p>
       </div>
 
-      <!-- Bottom Icon Row -->
       <div style="margin-top:20px;display:flex;align-items:center;gap:15px;">
         <div style="width:30px;height:30px;background:white;color:#555;font-size:10px;display:flex;align-items:center;justify-content:center;border-radius:4px;">ICON</div>
         <div style="width:50px;height:20px;background:white;color:#555;font-size:10px;display:flex;align-items:center;justify-content:center;border-radius:3px;">NCUA</div>
